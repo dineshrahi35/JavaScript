@@ -1,0 +1,333 @@
+variables:-
+***********
+- variables are used to store the data / values / literals.
+
+types of variables:-
+*******************
+1.var :- re-intitialization is possible
+        re-decalration is possible
+2.let:- re-intitialization is possible
+        re-decalration is not possible
+3.const:-  re-intitialization is not possible
+        re-decalration is not  possible
+
+ex: - var username = "Rakesh";
+    console.log(username);
+
+    - extension of javascript file  must be ".js".
+
+    console.log() :- it is a method to print the output in the developer console.
+    document.writeln():- it is a method to print the output on the UI.
+
+what is comment?
+-comments are the ignored lined by the browser.
+-to give an information to the developers.
+
+two type of comments in js:-
+****************************
+html :- <!-- comment to be done -->
+css :- /* ulkdsjvl */
+
+js:- 
+1.single line comment - (//)
+2.multi-line comment - (/**/)
+
+
+what is data types?
+-datatypes used to specify what kind of data stored in the variable.
+
+types of data types:-
+*********************
+1.primitive data types:-
+- they are built-in
+- immutable
+- they can store only a single values
+    -string
+    -number
+    -boolean
+    -undefined
+    -null
+    -symbol
+    -bigint
+
+2.non-primtitive data types:-
+- they are user defined 
+- mutable
+- they can store multiple values.
+    -array
+    -functions
+    -objects
+    -math , date , json
+
+Strings:-
+**********
+-sequence of characters enclosed within "" , '' , ``(template literals/backtiks)
+
+number:-  
+- -2^53-1 to +2^53-1 upto this range we consider as number data type.
+- beyond this range it will be bigint.
+
+boolean :- true / false.
+
+undefined:- variable is declared but not initialized with the value.
+
+null:-null is empty value / absence of an object.
+- return type of null is "object".
+
+bigint:- any value exceed the range of number dattype we consider that as bigint.
+- any value sufix with "n" will be bigint.
+
+Operators:-
+**************
+- Operators is a special type of symbols used to perform some operations on operands.
+ex - 10(operand1) +(operator) 20(operand2)
+
+- unary
+- binary
+- ternary(operand1 ? operand2 : operand3)
+
+1.arithmatic Operators
+2.assignment operator
+3.relational operator
+4.logical operator
+
+1.arithmatic Operators:-
+- addition
+- substraction
+- multiplication
+- division
+- modulus
+- expoenentail
+- increment(++) :- increment will happen with one value
+    - pre-increment :- increment before execution
+    - post-increment :- increment after execution
+- decrement(--) :- decrmenrted by 1
+    - pre-decrement
+    - post-decrement
+
+concatenation :- adding two or more strings.
+typecasting :- converting one datatype into another datatype.
+NaN :- Not a Number :- 
+
+2.assignment operator:-
+- = , += , -= , *= ,/= , %= , **=
+
+3.relational operator
+- which are used to compare two values.
+- == , === , != , !== , > , >= , < , <=
+- returns always a boolean.
+what is the difference between "==" and "==="?
+-"==" - it will check only values not a data type.
+-"===" - it will check both values and data types.
+- "!=" - similar to == it will check only values not a data types
+- "!==" - checks both value and data types.
+
+4.Logical operators:-
+AND(&&)- when both sides condition is true then it will return true else false.
+OR(||) :- when both side is true or any one side is true it will return true else false.
+NOT(!):- if true it becomes false and vice-versa. 
+
+Decision making statments:-
+****************************
+-if:- it will work for true statments
+- if else
+- else if ladder
+-switch
+- ternary
+
+prompt():- this method is used to collect the data from the users.
+
+looping statements:-
+********************
+- to execute the block of codes repeatedly.
+for loop :-
+-will be used when the exact iteration count is known.
+- minimum iteration count is "0"
+synatx :-  for(initialization ; condition; updation){
+            //statements
+            }
+while :-
+- will be used when we dont know the iteration count.
+- minimum iteration count is "0"
+syntax :-  while(condition){
+                //statements
+            }
+do-while:-
+- will be used when we dont know the iteration count.
+- minimum iteration count is "1"
+syntax :-  do{
+            //statements
+            }while(condition)
+
+what are entry controlled and exit controlled loops?
+- entry controlled loops - for loop , while loop
+- exit controlled loops - do-while loop
+
+-what is the difference between "break" and "continue" keywords.
+break - when condition satisfied it will terminate the loop
+permenently
+
+continue-when the condition satisfies it will skip that particular
+condition.
+
+functions:-
+************
+- function is a block of code used to execute specific task assigned to it.
+- function is a non-primitive data type.
+- functions can be reusable.
+
+syntax :-    function function_name(optional parameters){// function decalration
+                    //statements
+                    }
+                function_name(arguments);
+
+Types of functions:-
+*********************
+1.named function :- function which is having a name and invoked with the same name.
+2.anonymus function :-function which doesnot have  a name to declare and to invoke.
+3.function expression:- anonymus function decalration is assigned to a variable 
+    and invoked with the same variable.
+4.Immediate invoke function expression(IIFE):-
+    - once the function is created immediatley it should be invoked.
+    - it can be executed only once.
+
+5.Arrow function:-it is used to concise the normal function syntax.
+syntax :-  ()=>{};
+- arrow function is similar to anonymus function.
+
+6.Higher order function:-A function which accepts another function as an arguments.
+
+7.Callback function :- a function that is passed as an argument/value to higher order functions.
+
+- closure:-closure is a memory where functions are bundled together/functions are nested each other
+by giving accessability to the innermost function to access the variables of outer most function.
+
+
+Note :- 
+- current version of javascript is es14.
+- es6 - is stable version
+es - ECMA script
+ECMA - european computer manufacturing association
+
+what is return keyword?
+-return keyword is used to return the expression,variables , values.
+- return statment is also used to terminate/stop the execution.
+
+
+Arrays :-
+*********
+- it is non-primitive data type.
+- It is a collection of elements / multiple values.
+
+syntax :-   let arr = [];
+
+
+map() :- it is used to iterate values from the array.
+        - if we return the value , map() method returns new copied array.
+
+
+forEach() :- it is used to iterate the values from the array.
+           - it returns "undefined".
+
+
+what is object?
+- Object is an entity which is having states(proeprties) and behviours.
+- Object is used to store the data in the form key & value pairs.
+
+syntax :-   let obj = {};
+
+note:-  "this" - it is used to target current executing object.
+
+
+JSON :- Javascript object notation.
+- JSON is a lightweight technique of javascript used to transfer data/information from
+        client to server and vice-versa.
+        - except number it will store bot key and value pair inside the double quotes.
+
+- JSON is always in the form of "string".
+
+
+methods of json:-
+1.JSON.stringfy() :- it is used to convert Javascript object into JSON object.
+2.JSON.parse() :- it is used to convert JSON object into Javascript object.
+
+
+Asynchrnous in javascript:-
+***************************
+- to perform multiple task in javascript.
+
+1.setTimeout() :- it is a web api used to perform async operations at specified timeout.
+syntax :-  setTimeout(Callbackfn , timeout);
+
+2.setInterval():- it is a web api used to perform async operations at certain time interval.
+syntax :-  setInterval(Callbackfn , timeout);
+
+
+3.promise :- Promise is an object which represents eventual completion or failures of an async operations.
+
+    states of promise:-
+    1.pending state
+    2.fulfilled state
+    3.rejected state
+
+syntax :-  let p =  new Promise((resolve , reject)=>{});
+
+- the actual way of executing the promise is instance methods,
+        1.then() :- it is used to execute fulfilled state
+        2.catch() :- it is used to execute rejected state
+        3.finally() :- once promise is settled it will print the value.
+
+4.async & await:-
+*****************
+async:- async keyword is used to convert synchronous function into asynchronous function and start to execute the promise.
+
+await:- await keyword is used to make the function to wait untill the promise completes.
+
+
+note :- by default , javascript is synchronous(single threaded).
+
+
+DOM:-
+*****
+- DOM stands for document object model.
+- DOM is used to add , remove , update to content in the html document.
+- DOM is used to manipulate the content in the html document.
+
+DOM methods:-
+*************
+1.document.getElementById("demo"):-It is used to select the html element based on "id attribute" value.
+                              -id attribute should be unique / it should be used with only one element.
+
+2.document.getElementsByClassName(""):-It is used to select the html element based on "class attribute" value.
+                                      - class attribute can be used with multiple elements with common value.
+
+3.document.getElementsByTagName(""):- it is used select html element based on tag names.
+
+4.document.getElementsByName("") :-it is used to select html element based on "name attribute" value.
+
+- these below methods selects the html elements based on css selectors.
+5.document.querySelector("#id"):- it selects only one element.
+6.document.querySelectorAll(".class"):- it will selects multiple elements.
+
+innerText :- it is a property used to manipulate / add just plain text.
+innerHTML :- it is a property used to add /remove the content along with tags.
+
+Events in DOM:-
+***************
+- Events are nothing but actions performed on html elements.
+- events are of click events , mouse events , key events.
+
+click events :- onclick , ondblclick , onsubmit , onchange
+mouse events :- mouseover , mouseleave
+keyevents:- keydown , keyup , keypress(depricated).
+
+
+
+dynamic creation of html element from javascript:-
+**************************************************
+- to create dynamic element in javascript we have a method called as "document.createElement()".
+- to create an attributes we have a method called as "setAtttribute()".
+- to remove attribute we have "removeAttribute()".
+
+- any element which is created in javascript will not add directly to document, we have to add it 
+manually by using a method called "appendChild()".

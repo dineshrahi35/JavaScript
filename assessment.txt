@@ -1,0 +1,2 @@
+Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+ans:-
